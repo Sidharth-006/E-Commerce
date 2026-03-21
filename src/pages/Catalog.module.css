@@ -1,0 +1,26 @@
+.container {
+  background: #f1f3f6;
+}
+
+/* SECTION */
+.section {
+  margin: 30px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* AUTO SLIDER */
+.horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+}
+
+/* CARD FIX */
+.item {
+  min-width: 250px;
+  flex-shrink: 0;
+}

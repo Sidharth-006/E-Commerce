@@ -1,0 +1,61 @@
+.btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Sizes */
+.small {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.medium {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+}
+
+.large {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+}
+
+/* Variants */
+.primary {
+  background-color: #1890ff;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #40a9ff;
+}
+
+.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.secondary:hover {
+  background-color: #d9d9d9;
+}
+
+.danger {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.danger:hover {
+  background-color: #ff7875;
+}
+
+/* Extra */
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
