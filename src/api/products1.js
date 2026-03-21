@@ -44,7 +44,7 @@ export const kidsProducts = [
   { id: 33, name: "Kids Pant", price: 70, image: "https://www.stylearc.com/wp-content/uploads/bobby-kids-woven-pant-g4.jpg" },
   { id: 34, name: "Kids Socks", price: 35, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBVOvwJbf7-czI1UlmfeJiYnAiKaUoIbISQ&s" },
   { id: 35, name: "Kids Eyeglass", price: 50, image: "https://m.media-amazon.com/images/I/71pITJtSwDL._AC_UY1100_.jpg" },
-  { id: 36, name: "Kids Toy", price: 70, image: "https://png.pngtree.com/png-vector/20240423/ourmid/pngtree-3d-photo-of-colorful-toys-for-children-on-transparent-background-png-image_12306318.png" },
+  { id: 36, name: "Kids Toy", price: 70, image: "https://smris.com/cdn/shop/collections/wooden-baby-6-wheel-rattle-big-5h-5l-1w-inches-wooden-eco-friendly-toys1.jpg?v=1717149907&width=2400" },
   
 ];
 

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Catalog from "./pages/Catalog";
 import ProductDetail from "./pages/ProductDetail";
@@ -7,7 +7,6 @@ import Wishlist from "./pages/Wishlist";
 import Checkout from "./pages/Checkout";
 import Shopping from "./pages/Shopping";
 import CategoryShop from "./pages/CategoryShop";
-
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/shopping" element={<Shopping />} />
         <Route path="/category/:category" element={<CategoryShop />} />
-        
       </Routes>
     </Router>
   );
