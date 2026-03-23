@@ -1,19 +1,17 @@
 // src/pages/CategoryShop.jsx
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux"; // ✅ add useSelector
 import { addToCart } from "../features/cartSlice";
 import { menProducts, womenProducts, kidsProducts } from "../api/products1";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styles from "./CategroyShop.module.css";
 
 const CategoryShop = () => {
   const { category } = useParams();
   const dispatch = useDispatch();
-  const location = useLocation();
 
-  // ✅ Get search query from URL
-  const queryParams = new URLSearchParams(location.search);
-  const searchTerm = queryParams.get("search")?.toLowerCase() || "";
+  // ✅ GET search from Redux (IMPORTANT)
+  const searchTerm = useSelector((state) => state.search.query.toLowerCase());
 
   let products = [];
 
@@ -23,7 +21,7 @@ const CategoryShop = () => {
   else if (category === "kids") products = kidsProducts;
   else products = [...menProducts, ...womenProducts, ...kidsProducts];
 
-  // ✅ Search filtering
+  // ✅ Search filtering (FIXED)
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm)
   );
