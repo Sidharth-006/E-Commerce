@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromWishlist } from "../features/wishlistSlice";
+import { removeFromWishlist } from "../features/WishlistSlice";
 import { addToCart } from "../features/cartSlice";
 import styles from "./Wishlist.module.css";
 
